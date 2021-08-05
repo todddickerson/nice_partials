@@ -35,7 +35,7 @@ class ActionView::Renderer
       context.nice_partials_push_t_prefix ''
     end
 
-    result = original_render(context, options, block)
+    result = original_render(context, options)
 
     # Whether there was a block or not, pop off whatever we put on the stack.
     context.nice_partials_pop_t_prefix
